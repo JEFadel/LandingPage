@@ -232,39 +232,49 @@ header {
     right: 0;
  }
 
-
-presentation-retangulo
-
 .goals {
+    margin-top: 11.2rem;
+
+    padding: 3.2rem;
+
+    display: flex;
+    justify-content: space-evenly;
+
+    color: var(--white);
+
 }
 
-.goal1 {
+.goal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    gap: 1.6rem;
+
+    padding: 0 4rem;
 }
 
-.goal-img {
+.goal p {
+    font-size: 1.4rem;
+    padding: 0 1.6rem;
 }
 
-.goal-h2 {
+.goal img {
+}
+
+.goal h2 {
     font-family: 'codeccoldlogobold';
     letter-spacing: 0.05em;
     color: var(--white);
+
+    font-size: 3.2rem;
 }
 
-.goal-p {
+.goal p {
     font-family: 'sequelsansbookbody';
     color: var(--white);
 }
-
-.goal2 {
-}
-
-.goal3 {
-}
-
-.goal4 {
-}
-
-
 
 .service {
 }
