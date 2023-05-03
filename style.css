@@ -4,13 +4,26 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     text-decoration: none;
 }
 
+:root {
+    --white: #ededed;
+    --black: #141414;
+    --purpleDark: #591d90;
+    --purple: #8c5db7;
+    font-size: 62.5%;
+    font-family: 'Lato', sans-serif;
+}
+
+
 body {
-    font-size: 100%;
+    font-size: 2.6rem;
     background-image: url(img/0_fundosemefeitos.png);
     /*background: linear-gradient(68.15deg, #141414 16.62%, #591d90 85.61%);   FUNDO EM DEGRADÊ*/
+    width: 100vw;
 }
 
 .header {
@@ -213,7 +226,7 @@ conteudo3-imagem-quadrado
     color: #ededed;
 }
 
-conteudo4
+/* conteudo4
 conteudo4-titulo
 conteudo4-seta1
 conteudo4-seta2
@@ -241,4 +254,4 @@ rodape-direito-texto
 rodape-botao-zap
 rodape-botao-insta
 rodape-botao-face
-rodape-botao-ytb
+rodape-botao-ytb */

@@ -68,3 +68,9 @@ document.addEventListener("DOMContentLoaded", function() {
   verificarEmail();
   verificarResposta();
 });
+
+//scroll
+function scrollToSection() {
+  var section = document.getElementById("secao-destino");
+  section.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+}
