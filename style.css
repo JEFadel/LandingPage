@@ -26,44 +26,44 @@ body {
     width: 100vw;
 }
 
-.header {
+header {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    padding: 24px;
+    padding: 2.4rem;
 }
 
 .header-logo {
     height: 52px;
 }
 
-.header-menu {
+.header-nav {
     display: flex;
     gap: 32px;
 }
 
-.header-menu-text {
+.header-nav-text {
     font-family: 'sequelsansbookbody';
     color: #ededed;
     transition: color 0.2s ease-in-out;
 }
 
-.header-menu-text:hover {
+.header-nav-text:hover {
     color: #591d90;
 }
 
-.header-menu-text-bold {
+.header-nav-text-bold {
     font-family: 'sequelsansboldbody';
     color: #ededed;
     transition: color 0.2s ease-in-out;
 }
 
-.header-menu-text-bold:hover {
+.header-nav-text-bold:hover {
     color: #591d90;
 }
 
-.screen1 {
+.landing {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -71,12 +71,12 @@ body {
     padding: 24px;
 }
 
-.screen1-image {
+.landing-image {
     width: 60%;
     height: 60%;
 }
 
-.screen1-text {
+.landing-text {
     font-family: 'sequelsansheavyhead';
     color: #ededed;
 }
