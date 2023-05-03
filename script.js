@@ -69,8 +69,15 @@ document.addEventListener("DOMContentLoaded", function() {
   verificarResposta();
 });
 
-//scroll
+// Scroll para o formulário ao clicar no botão
 function scrollToSection() {
-  var section = document.getElementById("secao-destino");
+  var section = document.getElementById("destiny");
   section.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
 }
+
+// Reseta a página ao clicar na logo do header
+const logo = document.getElementById('logo-header');
+logo.addEventListener('click', () => {
+  location.reload();
+});
+
