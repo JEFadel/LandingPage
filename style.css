@@ -21,12 +21,21 @@
 
 body {
     font-size: 2.6rem;
-    background: url(img/0_fundosemefeitos.png);
+    /* background: url(img/0_fundosemefeitos.png); */
     /*background: linear-gradient(68.15deg, #141414 16.62%, #591d90 85.61%);   FUNDO EM DEGRADÊ*/
     width: 100vw;
+
+    background: linear-gradient(138deg, rgba(89,29,144,1) 0%, var(--black) 5%, var(--black) 100%);
+
 }
 
 header {
+    position: fixed;
+    left: 0;
+    top: 0;
+
+    width: 100%;
+
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -66,6 +75,8 @@ header {
     flex-direction: column;
     align-items: center;
     padding: 2.4rem 10.4rem;
+
+    gap: 6.4rem;
 }
 
 .landing {
@@ -74,6 +85,8 @@ header {
     align-items: center;
 
     gap: 4.8rem;
+
+
 }
 
 .landing-wrapper {
@@ -239,6 +252,9 @@ header {
     justify-content: space-evenly;
 
     color: var(--white);
+
+    background: linear-gradient(317deg, rgba(89,29,144,1) 22%, rgba(61,14,104,1) 78%);
+    margin: 0 -10.4rem;
 
 }
 
