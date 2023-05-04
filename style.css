@@ -297,12 +297,16 @@ header {
 }
 
 .cases-left-box h1 {
+    font-family: 'sequelsansheavyhead';
+    color: var(--white);
 }
 
 .cases-left-box img {
 }
 
 .cases-left-box p {
+    font-family: 'sequelsasslightbody';
+    color: var(--white);
 }
 
 .cases img {
@@ -330,12 +334,23 @@ header {
 }
 
 .case-title {
+    font-family: 'sequelsansblackbody';
+    color: var(--purple);
 }
 
-.case-text {
+.case-pipe {
+    font-family: 'sequelsansmediumbody';
+    color: var(--purple);
 }
 
 .case-number {
+    font-family: 'sequelsansheavybody';
+    color: var(--white);
+}
+
+.case-text {
+    font-family: 'sequelsansmediumbody';
+    color: var(--white);
 }
 
 
@@ -394,14 +409,15 @@ header {
 .conta-label {
 }
 
-.form-button {
+/*.form-button {
     font-family: 'sequelsansheavyhead';
     color: var(--white);
-}
+    background-color: ;
+}*/
 
 .form-subtext {
     font-family: 'sequelsansbookbody';
-    color: var(--white);
+    color: var(--purpleDark);
 }
 
 .footer {
