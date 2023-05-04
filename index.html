@@ -21,7 +21,7 @@
     </header>
 
     <main id="app">
-        <section class="landing">
+        <section class="landing" id="">
             <div class="landing-wrapper">
                 <img class="landing-image" src="img/0_imagemDentista.png" alt="Imagem de uma dentista usando espelho bucal em um paciente">
                 <div class="landing-right-wrapper">
@@ -99,7 +99,7 @@
         </section>
 
         <section class="cases">
-            <div class="cases-text">
+            <div class="cases-left-box">
                 <h1>CASES DE SUCESSO:</h1>
                 <img src="img/quadradinho.png">
                 <p>
@@ -108,37 +108,37 @@
                     em 30 dias.
                 </p>
             </div>
-                <img class="cases-image-square" src="img/QUADRADO01.png">
+            <img src="img/QUADRADO01.png">
             <div class="cases-carousel">
                 <div class="case1">
-                    <img src="img/3_Foto_Case01.png" alt="Primeira foto do case de Sucesso">
-                    <h4>
-                        <span class="cases-title">Odonto Excellence Tapera</span><span class="cases-text">&nbsp;|&nbsp;</span>
-                        <span class="cases-number"> R$ 228.058,85 </span><span class="cases-text">em Efetivação no primeiro mês e 50 pacientes (apenas com marketing)</span>
+                    <img class="case-image" src="img/3_Foto_Case01.png" alt="Primeira foto do case de Sucesso">
+                    <h4 class="case-caption">
+                        <span class="case-title">Odonto Excellence Tapera</span><span class="case-text">&nbsp;|&nbsp;</span>
+                        <span class="case-number"> R$ 228.058,85 </span><span class="case-text">em Efetivação no primeiro mês e 50 pacientes (apenas com marketing)</span>
                     </h4>
                 </div>
 
                 <div class="case2">
-                    <img src="img/3_Foto_Case02.png" alt="Segunda foto do case de Sucesso">
-                    <h4>
-                        <span class="cases-title">Odonto Excellence Nonoai</span><span class="cases-text">&nbsp;|&nbsp;</span>
-                        <span class="cases-number"> R$ 191.008,78 </span><span class="cases-text">em Efetivação no primeiro mês e 57 pacientes (apenas com marketing)</span>
+                    <img class="case-image" src="img/3_Foto_Case02.png" alt="Segunda foto do case de Sucesso">
+                    <h4 class="case-caption">
+                        <span class="case-title">Odonto Excellence Nonoai</span><span class="case-text">&nbsp;|&nbsp;</span>
+                        <span class="case-number"> R$ 191.008,78 </span><span class="case-text">em Efetivação no primeiro mês e 57 pacientes (apenas com marketing)</span>
                     </h4>
                 </div>
                          
                 <div class="case3">
-                    <img src="img/3_Foto_Case03.png" alt="Terceira foto do case de Sucesso">
-                    <h4>
-                        <span class="cases-title">Odonto Excellence Itupeva</span><span class="cases-text">&nbsp;|&nbsp;</span>
-                        <span class="cases-number"> R$ 114.478,55 </span><span class="cases-text">em Efetivação no primeiro mês de serviços e 24 pacientes (apenas com marketing)</span>
+                    <img class="case-image" src="img/3_Foto_Case03.png" alt="Terceira foto do case de Sucesso">
+                    <h4 class="case-caption">
+                        <span class="case-title">Odonto Excellence Itupeva</span><span class="case-text">&nbsp;|&nbsp;</span>
+                        <span class="case-number"> R$ 114.478,55 </span><span class="case-text">em Efetivação no primeiro mês de serviços e 24 pacientes (apenas com marketing)</span>
                     </h4>
                 </div>
                                 
                 <div class="case4">
-                    <img src="img/3_Foto_Case04.png" alt="Quarta foto do case de Sucesso">
-                    <h4>
-                        <span class="cases-title">Odonto Excellence São José dos Campos (Jardim Satélite)</span><span class="cases-text">&nbsp;|&nbsp;</span>
-                        <span class="cases-number"> R$ 111.971,00 </span><span class="cases-text">em Efetivação no primeiro mês e 30 pacientes (apenas com marketing)</span>
+                    <img class="case-image" src="img/3_Foto_Case04.png" alt="Quarta foto do case de Sucesso">
+                    <h4 class="case-caption">
+                        <span class="case-title">Odonto Excellence São José dos Campos (Jardim Satélite)</span><span class="case-text">&nbsp;|&nbsp;</span>
+                        <span class="case-number"> R$ 111.971,00 </span><span class="case-text">em Efetivação no primeiro mês e 30 pacientes (apenas com marketing)</span>
                     </h4>
                 </div>
             </div>
@@ -149,8 +149,8 @@
                 <img class="button-right" src="img/seta.png" alt="Seta para a direita">
                 <div class="depositions-carousel">
                     <img class="deposition1" src="img/4_Depoimento01.png" alt="Depoimento de Helena Krubtchesli">
-                    <img class="deposition" src="img/4_Depoimento02.png" alt="Depoimento de Cléber Nascimento Filho">
-                    <img class="deposition" src="img/4_Depoimento03.png" alt="Depoimento de Carlos Almeida di Antony">
+                    <img class="deposition2" src="img/4_Depoimento02.png" alt="Depoimento de Cléber Nascimento Filho">
+                    <img class="deposition3" src="img/4_Depoimento03.png" alt="Depoimento de Carlos Almeida di Antony">
                 </div>
         </section>
 
@@ -164,20 +164,20 @@
                 <img src="img/06_cadeado_formulário.png" alt="Ícone da Destrave sobre o formulário">
                 <form class="form-input" id="form" method="post">
                     <label class="form-text" for="nome">Nome:</label>
-                    <input type="text" id="nome" name="nome" maxlength="100" placeholder="Ex: João Elias" required><br>
+                    <input class="form-subtext" type="text" id="nome" name="nome" maxlength="100" placeholder="Ex: João Elias" required><br>
 
                     <label class="form-text" for="telefone">Telefone:</label>
-                    <input type="tel" id="telefone" name="telefone" required pattern="^\+?\d{0,2}\s?\(?\d{2,3}\)?\s?\d{0,1}?\s?\d{4}-?\s?\d{4}$" maxlength="14" placeholder="Ex: (41)8888-8888"><br>
+                    <input class="form-subtext" type="tel" id="telefone" name="telefone" required pattern="^\+?\d{0,2}\s?\(?\d{2,3}\)?\s?\d{0,1}?\s?\d{4}-?\s?\d{4}$" maxlength="14" placeholder="Ex: (41)8888-8888"><br>
 
                     <label class="form-text" for="cidade">Unidade franqueada (cidade):</label>
-                    <input type="text" id="cidade" name="cidade" maxlength="100" placeholder="Ex: Curitiba" required><br>
+                    <input class="form-subtext" type="text" id="cidade" name="cidade" maxlength="100" placeholder="Ex: Curitiba" required><br>
 
                     <label class="form-text" for="email">Email:</label>
-                    <input type="email" id="email" name="email" required pattern="^[a-z0-9._%+-]+@[a-zA-Z0-9.-]+.[a-z]{2,}(?:.[a-z]{2,})?$" maxlength="64" placeholder="Ex: email@destrave.com"><br>
+                    <input class="form-subtext" type="email" id="email" name="email" required pattern="^[a-z0-9._%+-]+@[a-zA-Z0-9.-]+.[a-z]{2,}(?:.[a-z]{2,})?$" maxlength="64" placeholder="Ex: email@destrave.com"><br>
 
                     <label class="form-text" id="conta-label"></label>
-                    <input class="form-text" type="text" id="resposta-conta" name="resposta-conta" maxlength="2" placeholder="Resultado" required>
-                    <button type="submit" class="form-button" id="enviar-btn" disabled>"QUERO UMA DEMONSTRAÇÃO!"</button> 
+                    <input class="form-subtext" type="text" id="resposta-conta" name="resposta-conta" maxlength="2" placeholder="Resultado" required>
+                    <button type="submit" class="form-button" id="enviar-btn" disabled>QUERO UMA DEMONSTRAÇÃO!</button> 
                 </form>
                 <p class="form-subtext">Seus dados estão protegidos conosco.</p>
             </div>
@@ -194,7 +194,7 @@
 
 
         <div class="footer-right">
-            <img src="logo_branca_destrave.png" alt="Logo Destrave Marketing e Publicidade.">
+            <img src="img/7_logo.png" alt="Logo Destrave Marketing e Publicidade.">
             <div class="footer-box">
                 <h3> MAIS INFORMAÇÕES</h3>
 
