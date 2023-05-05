@@ -162,22 +162,31 @@
         <section class="form">
             <div class="form-div" id="destiny">
                 <img src="img/06_cadeado_formulário.png" alt="Ícone da Destrave sobre o formulário">
-                <form class="form-input" id="form" method="post">
+                <form class="form-input" id="form" action="https://www.rdstation.com.br/api/1.2/conversions" method="post">
                     <label class="form-text" for="nome">Nome:</label>
-                    <input class="form-subtext" type="text" id="nome" name="nome" maxlength="100" placeholder="Ex: João Elias" required><br>
+                    <input class="form-subtext" type="text" id="nome" name="nome" maxlength="100" placeholder="Ex: João Elias" required /><br>
 
                     <label class="form-text" for="telefone">Telefone:</label>
-                    <input class="form-subtext" type="tel" id="telefone" name="telefone" required pattern="^\+?\d{0,2}\s?\(?\d{2,3}\)?\s?\d{0,1}?\s?\d{4}-?\s?\d{4}$" maxlength="14" placeholder="Ex: (41)8888-8888"><br>
+                    <input class="form-subtext" type="tel" id="telefone" name="telefone" required pattern="^\+?\d{0,2}\s?\(?\d{2,3}\)?\s?\d{0,1}?\s?\d{4}-?\s?\d{4}$" maxlength="14" placeholder="Ex: (41)8888-8888" /><br>
 
                     <label class="form-text" for="cidade">Unidade franqueada (cidade):</label>
-                    <input class="form-subtext" type="text" id="cidade" name="cidade" maxlength="100" placeholder="Ex: Curitiba" required><br>
+                    <input class="form-subtext" type="text" id="cidade" name="cidade" maxlength="100" placeholder="Ex: Curitiba" required /><br>
 
                     <label class="form-text" for="email">Email:</label>
-                    <input class="form-subtext" type="email" id="email" name="email" required pattern="^[a-z0-9._%+-]+@[a-zA-Z0-9.-]+.[a-z]{2,}(?:.[a-z]{2,})?$" maxlength="64" placeholder="Ex: email@destrave.com"><br>
+                    <input class="form-subtext" type="email" id="email" name="email" required pattern="^[a-z0-9._%+-]+@[a-zA-Z0-9.-]+.[a-z]{2,}(?:.[a-z]{2,})?$" maxlength="64" placeholder="Ex: email@destrave.com" /><br>
+
+                    <input type="hidden" name="token_rdstation" value="SEU_TOKEN_RD_STATION" />
+
+                    <input type="hidden" name="identificador" value="pagina-contato" />
 
                     <label class="form-text" id="conta-label"></label>
-                    <input class="form-subtext" type="text" id="resposta-conta" name="resposta-conta" maxlength="2" placeholder="Resultado" required>
-                    <button type="submit" class="landing-button" id="enviar-btn" disabled>QUERO UMA DEMONSTRAÇÃO!</button> 
+                    <input class="form-subtext" type="text" id="resposta-conta" name="resposta-conta" maxlength="2" placeholder="Resultado" required />
+                    <button type="submit" class="landing-button" id="enviar-btn" disabled>QUERO UMA DEMONSTRAÇÃO!</button>
+
+                    <input type="hidden" name="c_utmz" id="c_utmz" value="" />
+                    <script type="text/javascript">
+                    function read_cookie(a){var b=a+"=";var c=document.cookie.split(";");for(var d=0;d<c.length;d++){var e=c[d];while(e.charAt(0)==" ")e=e.substring(1,e.length);if(e.indexOf(b)==0){return e.substring(b.length,e.length)}}return null}try{document.getElementById("c_utmz").value=read_cookie("__utmz")}catch(err){}
+                    </script>
                 </form>
                 <p class="form-subtext">Seus dados estão protegidos conosco.</p>
             </div>
