@@ -41,6 +41,12 @@ header {
     align-items: center;
     justify-content: space-around;
     padding: 2.4rem;
+    transition: 1s ease-in-out;
+}
+
+.background-header {
+    background: rgba(20, 20, 20, 0.6);
+    
 }
 
 .header-logo {
