@@ -145,12 +145,24 @@
         </section>
         <section class="depositions">
                 <h1>DEPOIMENTOS</h1>
-                <img class="button-left" src="img/seta.png" alt="Seta para a esquerda">
-                <img class="button-right" src="img/seta.png" alt="Seta para a direita">
+                <!---img class="button-left" src="img/seta.png" alt="Seta para a esquerda"--->
+                <!---img class="button-right" src="img/seta.png" alt="Seta para a direita"--->
                 <div class="depositions-carousel">
-                    <img class="deposition1" src="img/4_Depoimento01.png" alt="Depoimento de Helena Krubtchesli">
-                    <img class="deposition2" src="img/4_Depoimento02.png" alt="Depoimento de Cléber Nascimento Filho">
-                    <img class="deposition3" src="img/4_Depoimento03.png" alt="Depoimento de Carlos Almeida di Antony">
+                    <input type="radio" name="slider" id="item-1" checked/>
+                    <input type="radio" name="slider" id="item-2"/>
+                    <input type="radio" name="slider" id="item-3"/>
+
+                    <div class="cards">
+                        <label class="card" for="item-1" id="photo-1">
+                            <img class="deposition1" src="img/4_Depoimento01.png" alt="Depoimento de Helena Krubtchesli">
+                        </label>
+                        <label class="card" for="item-2" id="photo-2">
+                            <img class="deposition2" src="img/4_Depoimento02.png" alt="Depoimento de Cléber Nascimento Filho">
+                        </label>
+                        <label class="card" for="item-3" id="photo-3">
+                            <img class="deposition3" src="img/4_Depoimento03.png" alt="Depoimento de Carlos Almeida di Antony">
+                        </label>
+                    </div>
                 </div>
         </section>
 
