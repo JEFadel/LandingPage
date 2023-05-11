@@ -47,7 +47,7 @@ header {
 }
 
 .background-header {
-    background: rgba(20, 20, 20, 0.6);
+    background: linear-gradient(180deg, rgba(20, 20, 20, 0.6) 50%, rgba(20, 20, 20, 0) 100% )
     
 }
 
