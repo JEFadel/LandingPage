@@ -42,6 +42,8 @@ header {
     justify-content: space-around;
     padding: 2.4rem;
     transition: 1s ease-in-out;
+
+    z-index: 1;
 }
 
 .background-header {
@@ -296,9 +298,11 @@ header {
     color: var(--white);
 }
 
-.cases {    
+section.cases {    
+    width: 100vw;
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 8rem;
 
     padding: 3.2rem;
@@ -307,6 +311,7 @@ header {
     background: linear-gradient(45deg, rgba(140,93,183,0.4) 0%, rgba(140,93,183,0.7) 35%, rgba(140,93,183,0.9) 100%);
 
     margin: 0 -10.4rem;
+
 
 }
 
@@ -331,11 +336,13 @@ header {
 
 #carouselFirstIndicators {
     max-width: 80rem;
+
 }
 
 #carouselFirstIndicators img {
     max-height: 50rem;
     object-fit: contain;
+
 }
 
 #carouselFirstIndicators .case-caption {
