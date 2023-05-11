@@ -407,25 +407,40 @@ section.cases {
     display: flex;
     align-items: center;
     flex-direction: column;
+
+    gap: 3.2rem;
 }
 
 .depositions h1 {
     font-family: 'sequelsansheavyhead';
     color: var(--white);
+
+    font-size: 6.4rem;
 }
 
 .service {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(45deg, rgba(140,93,183,0.4) 0%, rgba(140,93,183,0.7) 35%, rgba(140,93,183,0.9) 100%);
+
 }
 
 .service h1 {
     font-family: 'sequelsansheavyhead';
     color: var(--white);
+    font-size: 6.4rem;
 }
 
 .service img {
 }
 
 .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .form-div {
@@ -435,6 +450,21 @@ section.cases {
 }
 
 .form-input {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+
+.form-input .input-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: .4rem;
+}
+
+.input-wrapper input {
+    border: 0;
+    border-radius: 999rem;
+    padding: .8rem 1.6rem;
 }
 
 .form-text {
