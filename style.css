@@ -329,6 +329,20 @@ header {
     letter-spacing: 0.025em;
 }
 
+#carouselFirstIndicators {
+    max-width: 80rem;
+}
+
+#carouselFirstIndicators img {
+    max-height: 50rem;
+    object-fit: contain;
+}
+
+#carouselFirstIndicators .case-caption {
+    margin-top: 2.4rem;
+    font-size: 1.6rem;
+}
+
 
 .cases-left-box img {
 }
@@ -359,6 +373,7 @@ header {
 .case-title {
     font-family: 'sequelsansblackbody';
     color: var(--purple);
+    font-weight: 600;
 }
 
 .case-pipe {
