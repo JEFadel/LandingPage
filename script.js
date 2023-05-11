@@ -81,13 +81,11 @@ logo.addEventListener('click', () => {
   location.reload();
 });
 
-
 // Funcionalidade de adicionar background no header da página
 window.addEventListener('scroll', function() {
   const header = document.querySelector('header');
   const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-  
-  if (scrollTop > 300) {
+  if (scrollTop > 80) {
     header.classList.add('background-header');
   } else {
     header.classList.remove('background-header');

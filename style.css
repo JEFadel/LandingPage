@@ -21,10 +21,10 @@
 
 body {
     font-size: 2.6rem;
+
     /* background: url(img/0_fundosemefeitos.png); */
     /*background: linear-gradient(68.15deg, #141414 16.62%, #591d90 85.61%);   FUNDO EM DEGRADÊ*/
     width: 100vw;
-
     background: linear-gradient(138deg, rgba(89,29,144,1) 0%, var(--black) 5%, var(--black) 100%);
 
 }
@@ -66,6 +66,7 @@ header {
     font-family: 'sequelsansbookbody';
     color: var(--white);
     transition: color 0.2s ease-in-out;
+    text-decoration: none !important;
 }
 
 .header-nav *:hover {
@@ -76,6 +77,7 @@ header {
     font-family: 'sequelsansboldbody';
     color: var(--white);
     transition: color 0.2s ease-in-out;
+    text-decoration: none !important;
 }
 
 #app {
