@@ -307,14 +307,14 @@ header {
     color: var(--white);
 }
 
-.cases-left-box img {
-}
-
 .cases-left-box p {
-    font-family: 'sequelsasslightbody';
+    font-family: 'sequelsanslightbody';
     color: var(--white);
 }
 
+
+.cases-left-box img {
+}
 .cases img {
 }
 
@@ -363,104 +363,12 @@ header {
 .depositions {
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding: 30px 10px;
-    transition: background 0.4s ease-in;
+    flex-direction: column;
 }
 
 .depositions h1 {
     font-family: 'sequelsansheavyhead';
     color: var(--white);
-}
-
-.button-left {
-}
-
-.button-right {
-}
-
-
-input[type=radio] {
-    display: none;
-}
-
-.card {
-    position: absolute;
-    width: 60%;
-    height: 100%;
-    left: 0;
-    right: 0;
-    margin: auto;
-    cursor: pointer;
-    transition: transform 0.4s ease;
-}
-
-.depositions-carousel {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    max-width: 600px;
-    max-height: 600px;
-    transform-style: preserve-3d;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
-
-.cards img {
-    width: 100%;
-    height: 100%;
-    /*object-fit: cover;*/
-    border-radius: 10px;
-}
-
-.cards {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    margin-bottom: 20px;
-
-}
-
-#item-1:checked ~ cards #photo-3,
-#item-2:checked ~ cards #photo-1,
-#item-3:checked ~ cards #photo-2 {
-    transform: translateX(-60%) scale(0.8);
-    opacity: 0.4;
-    z-index: 0;   
-}
-
-#item-1:checked ~ cards #photo-2,
-#item-2:checked ~ cards #photo-3,
-#item-3:checked ~ cards #photo-1 {
-    transform: translateX(56%) scale(0.8);
-    opacity: 0.4;
-    z-index: 0;
-}
-
-#item-1:checked ~ cards #photo-1,
-#item-2:checked ~ cards #photo-2,
-#item-3:checked ~ cards #photo-3 {
-    transform: translateX(0) scale(1);
-    opacity: 1;
-    z-index: 1;
-}
-
-#item-1:checked ~ cards #photo-1 img,
-#item-2:checked ~ cards #photo-2 img,
-#item-3:checked ~ cards #photo-3 img {
-    box-shadow: 0px 0px 5px rgba(81, 81, 81, 0.47);
-}
-
-
-
-.deposition1 {
-}
-
-.deposition2 {
-}
-
-.deposition3 {
 }
 
 .service {

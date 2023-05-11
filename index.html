@@ -2,9 +2,14 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Destrave a agenda de avaliações da sua clínica Odonto Excellence!">
     <title>Destrave Marketing e Publicidade</title>
+
+    <!-- Inicializando o Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Demais estilizações da pasta css -->
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="fonts.css">
 </head>
@@ -102,7 +107,7 @@
             <div class="cases-left-box">
                 <h1>CASES DE SUCESSO:</h1>
                 <img src="img/quadradinho.png">
-                <p>
+                <p classs="cases-subtext">
                     Conheça alguns cases que através do
                     mareting obtiveram esses resultados
                     em 30 dias.
@@ -110,6 +115,21 @@
             </div>
             <img src="img/QUADRADO01.png">
             <div class="cases-carousel">
+                <div class="carousel-item">
+                    <img src="img/3_Foto_Case01.png" alt="Primeira foto do case de Sucesso">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="case-caption">
+                            <span class="case-title">Odonto Excellence Tapera</span><span class="case-pipe">&nbsp;|&nbsp;</span>
+                            <span class="case-number">R$ 228.058,85 </span><span class="case-text">em Efetivação no primeiro mês e 50 pacientes (apenas com marketing)</span>
+                        </h5>
+                        <p>...</p>
+                    </div>
+                </div>
+            
+
+
+
+
                 <div class="case1">
                     <img class="case-image" src="img/3_Foto_Case01.png" alt="Primeira foto do case de Sucesso">
                     <h4 class="case-caption">
@@ -143,27 +163,36 @@
                 </div>
             </div>
         </section>
+
+        <!-- Carrossel de depoimentos -->
         <section class="depositions">
                 <h1>DEPOIMENTOS</h1>
-                <!---img class="button-left" src="img/seta.png" alt="Seta para a esquerda"--->
-                <!---img class="button-right" src="img/seta.png" alt="Seta para a direita"--->
-                <div class="depositions-carousel">
-                    <input type="radio" name="slider" id="item-1" checked/>
-                    <input type="radio" name="slider" id="item-2"/>
-                    <input type="radio" name="slider" id="item-3"/>
-
-                    <div class="cards">
-                        <label class="card" for="item-1" id="photo-1">
-                            <img class="deposition1" src="img/4_Depoimento01.png" alt="Depoimento de Helena Krubtchesli">
-                        </label>
-                        <label class="card" for="item-2" id="photo-2">
-                            <img class="deposition2" src="img/4_Depoimento02.png" alt="Depoimento de Cléber Nascimento Filho">
-                        </label>
-                        <label class="card" for="item-3" id="photo-3">
-                            <img class="deposition3" src="img/4_Depoimento03.png" alt="Depoimento de Carlos Almeida di Antony">
-                        </label>
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img class="d-block w-100" src="img/4_Depoimento01.png" alt="First slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="img/4_Depoimento02.png" alt="Second slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="img/4_Depoimento03.png" alt="Third slide">
+                      </div>
                     </div>
-                </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Anterior</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Próximo</span>
+                    </a>
+                  </div>
         </section>
 
         <section class="service">
@@ -237,6 +266,12 @@
         </div>
     </footer>
 
+    <!-- jQuery, Popper.js e Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!-- Script dos botões, formulário e demais funções secundárias -->
     <script src="./script.js"></script>
 </body>
 </html>
