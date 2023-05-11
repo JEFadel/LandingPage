@@ -41,7 +41,7 @@ header {
     align-items: center;
     justify-content: space-around;
     padding: 2.4rem;
-    transition: 1s ease-in-out;
+    transition: 1s;
 
     z-index: 1;
 }
@@ -66,6 +66,8 @@ header {
     font-family: 'sequelsansbookbody';
     color: var(--white);
     transition: color 0.2s ease-in-out;
+    text-decoration: none;
+
 }
 
 .header-nav *:hover {
@@ -76,6 +78,8 @@ header {
     font-family: 'sequelsansboldbody';
     color: var(--white);
     transition: color 0.2s ease-in-out;
+
+    text-decoration: none;
 }
 
 #app {
@@ -438,18 +442,19 @@ section.cases {
 }
 
 .form {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.form-div {
-}
-
-.form-div img {
+.form img {
+    width: 8.8rem;
 }
 
 .form-input {
+    width: 100%;
+    max-width: 64rem;
     display: flex;
     flex-direction: column;
     gap: 2.4rem;
@@ -461,25 +466,57 @@ section.cases {
     gap: .4rem;
 }
 
+.input-wrapper:focus {
+    color: var(--purple);
+}
+
 .input-wrapper input {
     border: 0;
     border-radius: 999rem;
     padding: .8rem 1.6rem;
+
+    transition: .3s;
+
+}
+
+.input-wrapper input:focus-within {
+    outline: 4px solid var(--purpleDark);
+
 }
 
 .form-text {
     font-family: 'sequelsansheavyhead';
     color: var(--white);
+
+}
+
+p.form-subtext {
+    font-size: 1.6rem;
+    color: var(--white);
+    font-weight: 500;
+
+    margin-top: .4rem;
 }
 
 .conta-label {
 }
 
-/*.form-button {
+.form-button {
     font-family: 'sequelsansheavyhead';
     color: var(--white);
-    background-color: ;
-}*/
+    background: var(--purple);
+
+    border-radius: 1.6rem;
+    border: 0;
+    padding: 1.6rem 3.2rem;
+    transition: background 0.3s ease-in-out;
+
+    font-size: 2.4rem;
+}
+
+.form-button:hover {
+    background: var(--purpleDark);
+}
 
 .form-subtext {
     font-family: 'sequelsansbookbody';
