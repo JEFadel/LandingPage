@@ -259,7 +259,7 @@ header {
 
     color: var(--white);
 
-    background: linear-gradient(317deg, rgba(89,29,144,1) 22%, rgba(61,14,104,1) 78%);
+    background: linear-gradient(317deg, rgba(0,0,0,1) 22%, rgba(0,0,0,0.8) 78%);
     margin: 0 -10.4rem;
 
 }
@@ -296,20 +296,37 @@ header {
     color: var(--white);
 }
 
-.cases {
+.cases {    
+    display: flex;
+    align-items: center;
+    gap: 8rem;
+
+    padding: 3.2rem;
+
+
+    background: linear-gradient(45deg, rgba(140,93,183,0.4) 0%, rgba(140,93,183,0.7) 35%, rgba(140,93,183,0.9) 100%);
+
+    margin: 0 -10.4rem;
+
 }
 
 .cases-left-box {
+
+    max-width: 32.4rem;
 }
 
 .cases-left-box h1 {
     font-family: 'sequelsansheavyhead';
     color: var(--white);
+    font-size: 6rem;
+    line-height: 96%;
 }
 
 .cases-left-box p {
     font-family: 'sequelsanslightbody';
     color: var(--white);
+    font-size: 1.6rem;
+    letter-spacing: 0.025em;
 }
 
 
