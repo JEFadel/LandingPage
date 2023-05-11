@@ -1,6 +1,6 @@
 // Gerar a conta aleatória
 function gerarConta() {
-  const num1 = Math.floor(Math.random() * 90) + 10; // Gera um número aleatório entre 10 e 99
+  const num1 = Math.floor(Math.random() * 90); // Gera um número aleatório entre 10 e 89
   const num2 = Math.floor(Math.random() * 9) + 1; // Gera um número aleatório entre 1 e 9
   const resultado = num1 + num2; // Calcula o resultado da conta
   const contaLabel = document.getElementById("conta-label");
@@ -81,12 +81,10 @@ logo.addEventListener('click', () => {
   location.reload();
 });
 
-
 // Funcionalidade de adicionar background no header da página
 window.addEventListener('scroll', function() {
   const header = document.querySelector('header');
   const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-  
   if (scrollTop > 80) {
     header.classList.add('background-header');
   } else {
