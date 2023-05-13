@@ -400,9 +400,10 @@ section.cases {
     color: var(--white);
 }
 
+
 .fontIcon {
-    width: 50px;
-    height: 50px;
+    width: 3.5rem;
+    height: 3.5rem;
 }
 
 .depositions {
