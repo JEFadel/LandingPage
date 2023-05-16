@@ -4,7 +4,7 @@ function gerarConta() {
   const num2 = Math.floor(Math.random() * 9) + 1; // Gera um número aleatório entre 1 e 9
   const resultado = num1 + num2; // Calcula o resultado da conta
   const contaLabel = document.getElementById("conta-label");
-  contaLabel.innerHTML = `${num1} + ${num2} = `; // Exibe a conta na tela
+  contaLabel.innerHTML = `${num1} + ${num2} = ?`; // Exibe a conta na tela
   return resultado; // Retorna o resultado para ser comparado posteriormente
 }
 
