@@ -1,0 +1,83 @@
+@font-face {
+    src: url('../fonts/Sequel\ Sans\ Black\ Body.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'sequelsansboldbody';
+    src: url('../fonts/Sequel\ Sans\ Bold\ Body.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'sequelsansbookbody';
+    src: url('../fonts/Sequel\ Sans\ Book\ Body.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'sequelsansbookdisp';
+    src: url('../fonts/Sequel\ Sans\ Book\ Disp.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'sequelsansheavybody';
+    src: url('../fonts/Sequel\ Sans\ Heavy\ Body.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'sequelsansheavyhead';
+    src: url('../fonts/Sequel\ Sans\ Heavy\ Head.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'sequelsanslightbody';
+    src: url('../fonts/Sequel\ Sans\ Light\ Body.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'sequelsansmediumbody';
+    src: url('../fonts/Sequel\ Sans\ Medium\ Body.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'sequelsansromanhead';
+    src: url('../fonts/Sequel\ Sans\ Roman\ Head.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'codeccoldlogobold';
+    src: url('../fonts/CodecColdLogo-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'codecproextrabold';
+    src: url('../fonts/Codec-Pro-Extrabold-trial.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'codecproextralight';
+    src: url('../fonts/Codec-Pro-Extralight-trial.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
