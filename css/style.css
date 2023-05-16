@@ -523,27 +523,55 @@ p.form-subtext {
     color: var(--purpleDark);
 }
 
-.footer {
+footer {
+    display: flex;
+
+    padding: 4.8rem 11.2rem;
+    margin-top: 16.8rem;
 }
 
 .footer-left {
+    width: 60%;
+
 }
 
 .footer-left img {
+    width: 13.6rem;
+    margin-bottom: 1.6rem;
 }
 
 .footer-left p {
     font-family: 'sequelsansbookdisp';
     color: var(--white);
+    font-size: 2.2rem;
+}
+
+.divisor {
+    width: .4rem;
+    height: 16rem;
+
+    align-self: center;
+
+    background: var(--white);
 }
 
 .footer-right {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    gap: 3.2rem;
 }
 
-.footer-right img {
+.footer-right img.destrave-logo {
+   width: 38.4rem;
 }
 
 .footer-box {
+    width: 100%;
 }
 
 .footer-box h3 {
@@ -552,6 +580,32 @@ p.form-subtext {
 }
 
 .footer-buttons {
+    width: 100%;
+    display: flex;
+    gap: 1.6rem;
+    justify-content: center;
+}
+
+.footer-buttons a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 4.8rem;
+    height: 4.8rem;
+    border-radius: 50%;
+    background: var(--white);
+
+    transition: .5s;
+}
+
+.footer-buttons a:hover {
+    opacity: 40%;
+}
+
+.footer-buttons a ion-icon {
+    font-size: 3.2rem;
+    color: var(--black);
 }
 
 .footer-buttons img {
