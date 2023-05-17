@@ -22,8 +22,6 @@
 body {
     font-size: 2.6rem;
 
-    /* background: url(../img/0_fundosemefeitos.png); */
-    /*background: linear-gradient(68.15deg, #141414 16.62%, #591d90 85.61%);   FUNDO EM DEGRADÊ*/
     width: 100vw;
     background: linear-gradient(138deg, rgba(89,29,144,1) 0%, var(--black) 5%, var(--black) 100%);
 
@@ -54,6 +52,14 @@ header {
 .header-logo {
     width: 7.2rem;
     cursor: pointer;
+}
+
+.header-logo-mobile{
+    display: none;
+}
+
+#hambMenu {
+    display: none;
 }
 
 .header-nav {
@@ -609,4 +615,59 @@ footer {
 }
 
 .footer-buttons img {
+}
+
+
+@media (max-width: 1160px) {
+    .header-logo {
+        display: none;
+    }
+
+    .header-mobile {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .header-logo-mobile {
+        display: block;
+        width: 4rem;
+        object-fit: contain;
+    }
+
+    .header-nav {
+        flex-direction: column;
+        position: fixed;
+        left: 0;
+        top: 0;
+
+        background: var(--black);
+        width: 50%;
+        height: 100vh;
+
+        z-index: 2;
+        text-transform: uppercase;
+        text-align: center;
+        transform: translateX(-100%);
+
+        transition: .5s ease-in-out;
+    }
+
+    .open-header-nav {
+        transform: translateX(0%);
+    }
+
+    #hambMenu {
+        display: block;
+        color: var(--white);
+        font-size: 4rem;
+        cursor: pointer;
+    }
+
+    .close {
+        cursor: pointer;
+        color: var(--white);
+        font-size: 3.2rem;
+        margin: 2.4rem 1.6rem;
+    }
 }

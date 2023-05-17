@@ -91,3 +91,17 @@ window.addEventListener('scroll', function() {
     header.classList.remove('background-header');
   }
 });
+
+// NavBar para mobile
+
+const menu = document.querySelector('#hambMenu');
+const close = document.querySelector('.close');
+const nav = document.querySelector('.header-nav');
+
+menu.addEventListener('click', () => {
+  nav.classList.add('open-header-nav')
+});
+
+close.addEventListener('click', ()=> {
+  nav.classList.remove('open-header-nav')
+})
