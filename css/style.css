@@ -138,7 +138,7 @@ header {
 }
 
 
-.landing-button{
+.landing-button {
     font-family: 'sequelsansheavyhead';
     color: var(--white);
     background: var(--purple);
@@ -175,19 +175,14 @@ header {
     width: 80%;
 }
 
-.presentation-texto {
-    display: flex;
-}
-
 #presentation-img {
     display: block;
     border: .2rem solid var(--purpleDark);
     border-radius: 2.4rem;
     width: 100%;
     height: 60rem;
-    margin: auto; /* centraliza horizontalmente */
+    margin: 4rem auto 0; /* centraliza horizontalmente */
 
-    margin-top: 4rem ;
     background: linear-gradient(120deg, rgba(140,93,183,0.2) 0%, rgba(140,93,183,0.3) 35%, rgba(140,93,183,0.1) 100%);
 
  }
@@ -195,7 +190,7 @@ header {
 .presentation p {
     font-family: 'sequelsansromanhead';
     color: var(--white);
-    width: 120rem;
+    width: 100%;
     text-align: center;
     font-size: 2.4rem;
 }
@@ -286,6 +281,9 @@ header {
 }
 
 .goal p {
+    font-family: 'sequelsansbookbody';
+    color: var(--white);
+
     font-size: 1.4rem;
     padding: 0 1.6rem;
 }
@@ -299,11 +297,6 @@ header {
     color: var(--white);
 
     font-size: 3.2rem;
-}
-
-.goal p {
-    font-family: 'sequelsansbookbody';
-    color: var(--white);
 }
 
 section.cases {    
@@ -619,6 +612,7 @@ footer {
 
 
 @media (max-width: 1160px) {
+    /* header e navbar lateral */
     .header-logo {
         display: none;
     }
@@ -670,4 +664,100 @@ footer {
         font-size: 3.2rem;
         margin: 2.4rem 1.6rem;
     }
+
+    #app {
+        padding: 2.4rem 3.2rem;
+
+        gap: 1.6rem;
+    }
+
+    /* Landing */
+
+    .landing-wrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.6rem;
+    }
+
+    .landing-image {
+        width: 26.4rem;
+    }
+
+    .landing-right-wrapper h2 {
+        width: 100%;
+        margin-top: 0;
+        font-size: 1.6rem;
+    }
+
+    .presentation {
+        width: 100%;
+
+    }
+
+    #presentation-img {
+        height: 19.2rem;
+        margin: .4rem auto 0; /* centraliza horizontalmente */
+        border-radius: 1.2rem;
+    }
+
+    .presentation p {
+        font-size: 1.4rem;
+    }
+
+    .presentation-subtitle {
+        margin-top: 1.2rem;
+
+    }
+
+    .presentation-subtitle h4 {
+        font-size: 2.4rem;
+        margin: 0;
+    }
+
+    .presentation-subtitle h5 {
+        margin: 0;
+        font-size: 1.2rem;
+    }
+
+    /* Section Goals */
+
+    .goals {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 0 -3.2rem;
+
+        gap: 3.2rem;
+
+    }
+
+    .goal {
+        gap: .4rem;
+
+        padding: 0 1.6rem;
+
+
+    }
+
+    .goal img {
+        width: 8rem;
+    }
+
+    .goal p {
+        font-family: 'sequelsansbookbody';
+        color: var(--white);
+    
+        font-size: 1.4rem;
+        padding: 0;
+    }
+    
+    
+    
+    .goal h2 {
+        font-family: 'codeccoldlogobold';
+        letter-spacing: 0.05em;
+        color: var(--white);
+    
+        font-size: 2.6rem;
+    }
+
 }
